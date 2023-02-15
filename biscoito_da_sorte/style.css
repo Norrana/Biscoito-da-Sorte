@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+.hide {
+    display: none;
+}
+
+body {
+    background: linear-gradient(45deg, #190361, #bb00ff);
+    background-size: 200% 200%;
+
+    font-size: 1.6rem;
+    line-height: 2rem;
+
+    display: grid;
+    place-items: center;
+    height: 100vw;
+
+    animation: gradient 10s ease infinite;
+  }
+
+  @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+main {
+    width: min(42.8rem, 90%);/*pega a largura mínima, 1 ou outro*/
+    min-height: 42.4rem;
+
+    padding: 4.8rem 6.4rem;
+
+    background: #FFFFFF;
+    color: #34355B;;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    text-align: center;
+
+    animation: screenAnimation 3s backwards;
+}
+
+@keyframes screenAnimation {
+
+    0% {
+      opacity: 0;
+      transform: translateX(-70px);
+    }
+   
+    100% { 
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+h1, h2, #p2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+
+}
+
+#p1, button {
+    font-family: 'DM Sans', sans-serif;
+}
+
+#p1 {
+    margin-top: 1.4rem;
+    margin-bottom: 2rem;
+    text-shadow: 0rem .4rem .4rem rgba(0, 0, 0, 0.25);
+}
+
+button {
+    border: none;
+    background-color: #FFFFFF;
+    cursor: pointer;
+
+}
+
+#btmTry svg {
+    width: 25rem;
+    height: 19rem;
+
+}
+
+#btnTry:hover {
+    animation: loading .3s infinite;
+  }
+  
+  @keyframes loading {
+  
+    0% {
+      transform: rotate(0);
+    }
+    25% {
+      transform: rotate(-5deg);
+    }
+      50% {
+          transform: rotate(5deg);
+      }
+    75% {
+      transform: rotate(-5deg);
+    }
+      100% { 
+          transform: rotate(5deg);
+    }
+  }
+
+/* screen2 */
+
+.screen2 p {
+    animation: phraseAnimation 5s backwards;
+}
+
+@keyframes phraseAnimation {
+
+  0% {
+    opacity: 0;
+    transform: translateZ(-70px);
+  }
+ 
+  100% { 
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+  
+  .screen2 img {
+    margin: 1.7rem 0;
+  }
+
+#p2 {
+    font-family: 'Dancing Script', cursive;
+    
+    background: #E4EDF1;
+    color: #000000;
+
+    padding: 1rem;
+    margin-block: 1.7rem;
+}
+
+#svg2 {
+    width: 30rem;
+    height: 11.5rem;
+    margin-bottom: 5.72rem;
+}
+
+#btnReset {
+    width: 17.4rem;
+    height: 5.2rem;
+
+    background: #FF9500;
+    border-radius: 4px;
+
+    color: #FFFFFF;
+
+    transition: background .3s;
+}
+
+#btnReset:hover {
+    background-color: #db8000;
+  }
+
+  
